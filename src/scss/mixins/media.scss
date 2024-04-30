@@ -1,3 +1,10 @@
+@mixin slider {
+    @media (max-width: 2000px) {
+      @content;
+    }
+  }
+
+
 @mixin small-desktop {
   @media (max-width: 1440px) {
     @content;
