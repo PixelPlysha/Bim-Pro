@@ -1,0 +1,133 @@
+.accordion {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include small-tablet {
+    display: none;
+  }
+}
+
+.accordion-container {
+  display: flex;
+  background-color: #222224;
+
+  @include small-tablet {
+    flex-direction: column;
+  }
+}
+
+.accordion-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+
+  padding: 20px;
+  gap: 5px;
+
+  @include mini-desktop {
+    min-width: 0;
+  }
+}
+
+.accordion-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #9da0a3;
+  border-right: 1px solid #9da0a3;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #efefef;
+  padding-bottom: 40px;
+  background-color: #222224;
+
+  @include mini-desktop {
+    font-size: 40px;
+  }
+  @include tablet {
+    font-size: 30px;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.accordion-icon {
+  margin-right: 25px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.accordion-content {
+  padding-top: 20px;
+  width: 785px;
+
+  @include mini-desktop {
+    max-width: 785px;
+  }
+}
+
+.accordion-section {
+  display: none;
+}
+
+.nested-content {
+  margin-left: 55px;
+  display: none;
+
+  @include small-tablet {
+    margin-left: 10px;
+    br {
+        display: none;
+      }
+  }
+
+  p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #efefef;
+
+    @include small-tablet {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      
+      
+    }
+    @include mobile {
+      margin-right: 5px;
+    }
+  }
+}
+
+.show {
+  display: block !important; /* Override default display: none */
+}
+
+.option {
+  height: 109px;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 123%;
+  letter-spacing: 0.01em;
+  color: #ea4c14;
+  border-bottom: 1px solid #9da0a3;
+  border-top: 1px solid #9da0a3;
+  border-right: 1px solid #9da0a3;
+
+  @include small-tablet {
+    margin-left: 5px;
+    font-size: 22px;
+    max-height: 79px;
+  }
+}
+
+.option .accordion-icon {
+  transition: transform 0.4s ease-in-out;
+}
