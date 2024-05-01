@@ -1,0 +1,127 @@
+.baner {
+    background-color: #171719;
+    
+
+    &__container {
+        width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 28%;
+
+      @include slider {
+        padding-left: 5%;
+      }
+      @include small-desktop {
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+      }
+
+      &__left {
+        margin-right: 114px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0;
+        }
+
+        @include small-tablet {
+            flex-direction: column;
+        }
+        
+        
+        &-top {
+            display: flex;
+            margin-top: 66px;
+            margin-bottom: 61px;
+
+            @include small-tablet {
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+        }
+      }
+
+      &__num {
+        margin-right: 15px;
+        color: #EA4C14;
+        display: flex;
+        justify-content: flex-end;
+        
+        border: 4px solid #efefef;
+        width: 206px;
+        height: 218px;
+
+        &-numbers {
+            display: flex;
+            font-size: 80px;
+            margin-top: 135px;
+            margin-right: 5px;
+        }
+
+        &-persent {
+            background-color: #EA4C14;
+            svg {
+                margin-top: 160px;
+                margin-right: 5px;
+            }
+        }
+
+
+        &-descr {
+            margin-top: 135px;
+            font-weight: 400;
+            line-height: 125%;
+            letter-spacing: 0.01em;
+            color: #a5a5a5;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &-title {
+            margin-bottom: 60px;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 97%;
+            letter-spacing: 0.01em;
+            color: #fff;
+
+            @include tablet {
+                font-size: 50px;
+                margin-top: 66px;
+            }
+            @include small-tablet {
+                font-size: 40px;
+                margin-top: 36px;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+
+            @include mobile {
+                font-size: 34px;
+            }
+        }
+      }
+    
+      &__img {
+        width: 1062px;
+        
+        @include small-desktop {
+            display: none;
+        }
+      }
+    
+  }
+  
+  
+  
+  
+  
+  
