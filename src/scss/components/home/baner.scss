@@ -3,19 +3,11 @@
     
 
     &__container {
-        width: 100%;
       display: flex;
-      justify-content: flex-start;
-      padding-left: 28%;
 
-      @include slider {
-        padding-left: 5%;
-      }
       @include small-desktop {
         justify-content: center;
-        padding-left: 3%;
     }
-    
       }
 
       &__left {
