@@ -1,4 +1,4 @@
-@mixin slider {
+@mixin desktop {
     @media (max-width: 2000px) {
       @content;
     }

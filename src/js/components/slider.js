@@ -10,7 +10,12 @@ export const useVisualSlider = () => {
       el: '.swiper-scrollbar',
       draggable: true,
     },
+  });
+};
 
-
+export const useComplexSlider = () => {
+  new Swiper('.complex__slider', {
+    slidesPerView: 'auto',
+    loop: true,
   });
 };

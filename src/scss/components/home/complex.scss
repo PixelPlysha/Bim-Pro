@@ -1,0 +1,158 @@
+.complex {
+  padding: 130px 0 84px;
+
+  &__wrapper {
+    display: flex;
+    margin-top: 20px;
+
+    @include small-desktop {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__right {
+    margin-left: 200px;
+    max-width: 790px;
+
+    @include desktop {
+        margin-left: 30px;
+    }
+
+    @include mobile {
+        margin-left: 5px;
+    }
+  }
+
+  &__left {
+    
+    min-width: 784px;
+    margin-top: 88px;
+
+    @include desktop {
+      min-width: 684px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 100%;
+      letter-spacing: 0.01em;
+      color: #efefef;
+
+      @include small-tablet {
+        font-size: 36px;
+      }
+      @include mobile {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.acordion {
+  margin-top: 55px;
+
+  &-header {
+    display: flex;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #9da0a3;
+    cursor: pointer;
+
+    &-title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: #efefef;
+
+      @include small-tablet {
+        font-size: 22px;
+      }
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-content {
+    padding-top: 30px;
+    display: none;
+    transition: transform 0.6s ease-in-out;
+
+    img {
+      @include small-tablet {
+        display: none;
+      }
+    }
+
+    &-descr {
+        font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: #fff;
+
+      &-link {
+        color: #ea4c14;
+      }
+    }
+  }
+
+  &-icon {
+    margin-right: 30px;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  &-svg {
+    margin-right: 15px;
+  }
+}
+
+.acordion-content.show {
+  display: block;
+  transition: transform 0.6s ease-in-out;
+
+  
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.swiper {
+  @include tablet {
+    margin-top: 50px;
+  }
+}
+
+.complex__slide {
+  img {
+    width: 859px;
+    height: 1104px;
+
+    @include small-desktop {
+      width: 659px;
+      height: 804px;
+    }
+    @include small-tablet {
+      width: 459px;
+      height: 604px;
+    }
+    @include mobile {
+      width: 359px;
+      height: 504px;
+    }
+    
+  }
+}
+.first {
+    @include small-tablet {
+        display: none;
+    }
+}
+ .second {
+    display: none;
+
+    @include small-tablet {
+        display: inline-block;
+    }
+ }
