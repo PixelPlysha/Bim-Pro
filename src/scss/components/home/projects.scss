@@ -1,4 +1,5 @@
 .projects {
+    background: #2e2e31;
   padding: 173px 0 173px;
 
   @include small-desktop {
@@ -137,6 +138,17 @@
 
   &__info {
     margin-top: 140px;
+
+    @include small-desktop {
+        margin-top: 120px;
+    }
+
+    @include tablet {
+        margin-top: 110px;
+      }
+    @include small-tablet {
+        margin-top: 90px;
+      }
     
     &-title {
         margin-bottom: 22px;
@@ -146,7 +158,16 @@
       letter-spacing: 0.01em;
       color: #efefef;
 
-      
+      @include small-desktop {
+        text-align: center;
+    }
+
+    @include tablet {
+        font-size: 40px;
+      }
+    @include small-tablet {
+        font-size: 36px;
+      }
     }
 
     &-masage {
